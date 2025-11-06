@@ -49,6 +49,7 @@ func main() {
 
 	port := getEnv("PORT", "8080")
 	log.Println("Server running on port:", port)
+	log.Println("Container built by Whitten Smith")
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
 
